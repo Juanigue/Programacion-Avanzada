@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://du6yfl7rtkhuy"]
+
+[ext_resource type="Script" uid="uid://b3a01x8528hoa" path="res://cubo.gd" id="1_6ba58"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_lgngo"]
+
+[node name="Mundo" type="Node3D" unique_id=663182596]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.68766046)
+
+[node name="Cubo" type="MeshInstance3D" parent="." unique_id=1074475493]
+mesh = SubResource("BoxMesh_lgngo")
+script = ExtResource("1_6ba58")
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=232046466]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.052387238, 0.13102663, 2.674896)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1142365956]
+transform = Transform3D(-0.93055516, 0.30567923, 0.20156224, 0.16960666, -0.12801231, 0.9771625, 0.3245007, 0.94348985, 0.06727728, 1.2804279, 5.5332484, -8.324472)
